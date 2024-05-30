@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.poli.edu.aplicacion.controlador.controllador">
+  <tabs>
+    <Tab style="-fx-background-color: #00DB71;" text="Cuenta ">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: White;">
+               <children>
+                  <TextField fx:id="textnombres" layoutX="21.0" layoutY="100.0" prefHeight="25.0" prefWidth="222.0" style="-fx-background-color: #00DB71;" />
+                  <TextField fx:id="textapellidos" layoutX="356.0" layoutY="100.0" prefHeight="25.0" prefWidth="222.0" style="-fx-background-color: #00DB71;" />
+                  <TextField fx:id="textnumeroid" layoutX="21.0" layoutY="173.0" prefHeight="25.0" prefWidth="222.0" style="-fx-background-color: #00DB71;" />
+                  <TextField fx:id="textprogramaAcademico" layoutX="356.0" layoutY="173.0" prefHeight="25.0" prefWidth="222.0" style="-fx-background-color: #00DB71;" />
+                  <TextField fx:id="textcorreoElectronico" layoutX="182.0" layoutY="234.0" prefHeight="25.0" prefWidth="222.0" style="-fx-background-color: #00DB71;" />
+                  <Text layoutX="27.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombres" wrappingWidth="55.884765625">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="17.0" />
+                     </font>
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color green="0.949999988079071" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </stroke></Text>
+                  <Text layoutX="359.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos" wrappingWidth="71.3486328125">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="17.0" />
+                     </font></Text>
+                  <Text layoutX="21.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero  de Identificacion" wrappingWidth="132.77734375">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="17.0" />
+                     </font></Text>
+                  <Text layoutX="355.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Programa Academico">
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="17.0" />
+                     </font></Text>
+                  <Text layoutX="239.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo electronico" wrappingWidth="107.6884765625">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="17.0" />
+                     </font></Text>
+                  <Button fx:id="textregistrar" layoutX="254.0" layoutY="313.0" mnemonicParsing="false" onAction="#oprimir_registrar" prefHeight="33.0" prefWidth="78.0" style="-fx-background-color: #00DB71;" text="Registrar">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="15.0" />
+                     </font></Button>
+                  <AnchorPane prefHeight="53.0" prefWidth="600.0" style="-fx-background-color: #00DB71;">
+                     <children>
+                        <Text layoutX="-13.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cuenta" textAlignment="CENTER" wrappingWidth="202.5316162109375">
+                           <font>
+                              <Font name="Gill Sans MT" size="21.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="40.0" fitWidth="37.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../../../Pictures/Screenshots/cuenta.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="51.0" fitWidth="40.0" layoutX="546.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../../../Pictures/Screenshots/flechas.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <ImageView fitHeight="116.0" fitWidth="51.0" layoutX="2.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../Pictures/Screenshots/1200px-Planta_Piraña_Mario_Party_DS.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab style="-fx-background-color: #00DB71;" text="Registro de Equipo">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="textnombreEquipo" layoutX="14.0" layoutY="109.0" prefHeight="26.0" prefWidth="170.0" style="-fx-background-color: #00DB71 #00DB71;" />
+                  <TextField fx:id="textclaseEquipo" layoutX="216.0" layoutY="109.0" prefHeight="26.0" prefWidth="168.0" style="-fx-background-color: #00DB71;" />
+                  <TextField fx:id="texdescripcionEquipo" layoutX="424.0" layoutY="109.0" prefHeight="26.0" prefWidth="158.0" style="-fx-background-color: #00DB71;" />
+                  <TextField fx:id="textnumeroSerie" layoutX="77.0" layoutY="221.0" prefHeight="25.0" prefWidth="176.0" style="-fx-background-color: #00DB71;" />
+                  <TextField fx:id="textvalorEquipo" layoutX="336.0" layoutY="219.0" prefHeight="25.0" prefWidth="176.0" style="-fx-background-color: #00DB71;" />
+                  <Button fx:id="textregistrarEquipo" layoutX="247.0" layoutY="314.0" mnemonicParsing="false" onAction="#oprimir_registrarEquipo" prefHeight="32.0" prefWidth="106.0" style="-fx-background-color: #00DB71;" text="Registar Equipo">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="15.0" />
+                     </font></Button>
+                  <Text layoutX="14.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Equipo">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="17.0" />
+                     </font></Text>
+                  <Text layoutX="216.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clase Equipo">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="17.0" />
+                     </font></Text>
+                  <Text layoutX="424.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descripcion de Equipo">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="17.0" />
+                     </font></Text>
+                  <Text layoutX="77.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero de Serie">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="17.0" />
+                     </font></Text>
+                  <Text layoutX="344.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor Equipo">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="17.0" />
+                     </font></Text>
+                  <AnchorPane layoutX="-3.0" prefHeight="53.0" prefWidth="607.0" style="-fx-background-color: #00DB71;">
+                     <children>
+                        <Text layoutX="69.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registro de Equipo" wrappingWidth="184.373046875">
+                           <font>
+                              <Font name="Gill Sans MT" size="21.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="37.0" fitWidth="36.0" layoutX="546.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../../../Pictures/Screenshots/flechas.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="42.0" fitWidth="40.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../../../Pictures/Screenshots/camara.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab style="-fx-background-color: #00DB71;" text="Prestamo de Equipo">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextArea fx:id="text_area_prestamo" layoutX="51.0" layoutY="149.0" prefHeight="169.0" prefWidth="502.0" />
+                  <Text layoutX="66.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <TextField fx:id="textnumeroEquipo" layoutX="271.0" layoutY="114.0" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #00DB71;" />
+                  <Text layoutX="123.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selecccione Numero Del Equipo Interesado: " wrappingWidth="358.86798095703125">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="textConfirmar" layoutX="172.0" layoutY="332.0" mnemonicParsing="false" onAction="#oprimir_confirmar" style="-fx-background-color: #00DB71;" text="Confirmar">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btton_cargar" layoutX="343.0" layoutY="332.0" mnemonicParsing="false" onAction="#press_cargar_equipo" style="-fx-background-color: #00DB71;" text="Cargar Equipos">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="15.0" />
+                     </font></Button>
+                  <AnchorPane prefHeight="52.0" prefWidth="600.0" style="-fx-background-color: #00DB71;">
+                     <children>
+                        <Text layoutX="61.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prestamo" wrappingWidth="99.503173828125">
+                           <font>
+                              <Font name="Gill Sans MT" size="21.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="37.0" fitWidth="64.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../../../Pictures/Screenshots/flechas.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab style="-fx-background-color: #00DB71;" text="Devolver Equipo ">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="textnumeroId1" layoutX="169.0" layoutY="173.0" prefHeight="23.0" prefWidth="246.0" style="-fx-background-color: #00DB71;" />
+                  <Text layoutX="148.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escriba su numero de identificacion:">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="textConfirmar1" layoutX="255.0" layoutY="231.0" mnemonicParsing="false" onAction="#oprimir_confirmar1" style="-fx-background-color: #00DB71;" text="Confirmar">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="15.0" />
+                     </font></Button>
+                  <AnchorPane prefHeight="51.0" prefWidth="600.0" style="-fx-background-color: #00DB71;">
+                     <children>
+                        <Text layoutX="59.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Devolver Equipo">
+                           <font>
+                              <Font name="Gill Sans MT" size="21.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../../../Pictures/Screenshots/flechas.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab style="-fx-background-color: #00DB71;" text="Historial Prestamo">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="text_numeroId2" layoutX="162.0" layoutY="119.0" prefHeight="25.0" prefWidth="281.0" style="-fx-background-color: #00DB71;" />
+                  <TextArea fx:id="text_area_historial" layoutX="43.0" layoutY="158.0" prefHeight="174.0" prefWidth="514.0" />
+                  <Text layoutX="157.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escribir su numero de identificacion:">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="textConfirmar2" layoutX="268.0" layoutY="338.0" mnemonicParsing="false" onAction="#oprimir_confirmar2" style="-fx-background-color: #00DB71;" text="Confirmar">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="15.0" />
+                     </font></Button>
+                  <AnchorPane layoutX="-4.0" layoutY="-6.0" prefHeight="58.0" prefWidth="607.0" style="-fx-background-color: #00DB71;">
+                     <children>
+                        <Text layoutX="61.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Historial Prestamo">
+                           <font>
+                              <Font name="Gill Sans MT" size="21.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="81.0" fitWidth="37.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../../../Pictures/Screenshots/lupa.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="27.0" fitWidth="61.0" layoutX="562.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../../../Pictures/Screenshots/flechas.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="490.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../Pictures/Screenshots/mario_PNG53.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
